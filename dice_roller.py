@@ -7,6 +7,11 @@ def main():
         dice_sum+=roll
         print(f'You rolled a {roll}')
     print(f'You rolled a total of {dice_sum}')
-
+    if roll==1:
+        print(f'You rolled{roll}! Critical Fail!')
+    elif roll==6:
+        print(f'You rolled a {roll}! Critical Success!')
+    else:
+        print(f'You rolled a {roll}')
 if __name__== "__main__":
   main()
